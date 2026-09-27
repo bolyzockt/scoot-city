@@ -1,7 +1,7 @@
 {
-  "updated": "2026-09-27T04:04:15.371Z",
+  "updated": "2026-09-27T19:49:01.702Z",
   "source": "CLAUDE.md",
-  "total": 63,
+  "total": 69,
   "eta": "Early 2027 (estimate)",
   "areas": [
     {
@@ -41,12 +41,12 @@
       "percent": 65
     },
     {
-      "name": "Sound & effects",
-      "percent": 35
+      "name": "Sound & effects (engine sound confirmed by user)",
+      "percent": 75
     },
     {
       "name": "Time trials, daily challenges & rewards",
-      "percent": 45
+      "percent": 55
     },
     {
       "name": "Admin tools & live events",
@@ -54,15 +54,19 @@
     },
     {
       "name": "Polish, languages (12 done), testing & release",
-      "percent": 25
+      "percent": 30
+    },
+    {
+      "name": "Wheelies (balance mechanic)",
+      "percent": 90
     }
   ],
   "next": [
-    "Sounds (engine, impact)",
-    "Real 2-player testing",
+    "Real 2-player testing (incl. wheelie pose for other players)",
     "Scooter tuning & balancing",
     "More time trials & missions",
-    "Wheelies with balance mechanic"
+    "HUD hint before a wheelie tip-over",
+    "Polish & final testing before release"
   ],
   "scooters": [
     {
