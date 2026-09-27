@@ -1,7 +1,7 @@
 {
-  "updated": "2026-09-27T03:35:46.172Z",
+  "updated": "2026-09-27T04:04:15.371Z",
   "source": "CLAUDE.md",
-  "total": 54,
+  "total": 63,
   "eta": "Early 2027 (estimate)",
   "areas": [
     {
@@ -17,8 +17,8 @@
       "percent": 80
     },
     {
-      "name": "Scooters (5 of 10 planned)",
-      "percent": 50
+      "name": "Scooters (10 of 10 built, tuning left)",
+      "percent": 85
     },
     {
       "name": "Customization & garage",
@@ -26,7 +26,7 @@
     },
     {
       "name": "Shop, coins & test rides",
-      "percent": 60
+      "percent": 70
     },
     {
       "name": "Saving progress",
@@ -45,18 +45,23 @@
       "percent": 35
     },
     {
-      "name": "Missions, records & challenges",
-      "percent": 5
+      "name": "Time trials, daily challenges & rewards",
+      "percent": 45
     },
     {
-      "name": "Polish, English, testing & release",
-      "percent": 5
+      "name": "Admin tools & live events",
+      "percent": 60
+    },
+    {
+      "name": "Polish, languages (12 done), testing & release",
+      "percent": 25
     }
   ],
   "next": [
     "Sounds (engine, impact)",
     "Real 2-player testing",
-    "More scooters (up to 10)",
+    "Scooter tuning & balancing",
+    "More time trials & missions",
     "Wheelies with balance mechanic"
   ],
   "scooters": [
@@ -124,6 +129,50 @@
       "powerW": 4500,
       "topSpeedKmh": 66,
       "price": 15000,
+      "starter": false
+    },
+    {
+      "id": "voltix_v3",
+      "brand": "Voltix",
+      "name": "V3",
+      "category": "Urban Performance",
+      "weightKg": 19,
+      "powerW": 1600,
+      "topSpeedKmh": 40,
+      "price": 3500,
+      "starter": false
+    },
+    {
+      "id": "state_s5",
+      "brand": "State",
+      "name": "S5",
+      "category": "Comfort Commuter",
+      "weightKg": 23,
+      "powerW": 900,
+      "topSpeedKmh": 32,
+      "price": 5000,
+      "starter": false
+    },
+    {
+      "id": "kukiro_g7",
+      "brand": "Kukiro",
+      "name": "G7",
+      "category": "Offroad Dual-Motor",
+      "weightKg": 42,
+      "powerW": 3600,
+      "topSpeedKmh": 46,
+      "price": 12000,
+      "starter": false
+    },
+    {
+      "id": "segaro_r12",
+      "brand": "Segaro",
+      "name": "R12",
+      "category": "Hyper Flagship",
+      "weightKg": 44,
+      "powerW": 6500,
+      "topSpeedKmh": 76,
+      "price": 30000,
       "starter": false
     }
   ],
