@@ -70,6 +70,12 @@
   .note{color:var(--mut);font-size:13px;margin-top:16px}
   footer{border-top:1px solid var(--line);padding:32px 0;color:var(--mut);font-size:14px}
   footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+  #shareRow{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:16px}
+  #shareRow a,#shareRow button{background:var(--panel2);border:1px solid var(--line);color:#cfd6e2;font:inherit;font-size:13px;padding:9px 14px;border-radius:9px;text-decoration:none;cursor:pointer}
+  #shareRow a:hover,#shareRow button:hover{border-color:var(--cy);color:var(--text)}
+  #qrWrap{margin-top:26px;display:flex;flex-direction:column;align-items:center;gap:8px}
+  #qrWrap img{border-radius:10px;background:#fff;padding:8px}
+  #qrWrap span{color:var(--mut);font-size:12px}
   @media (max-width:640px){nav a.l{display:none}.big{justify-content:center;text-align:center}}
 </style>
 </head>
@@ -119,6 +125,16 @@
     <p class="sub" style="margin-bottom:24px">Sneak peeks, testing, giveaways and group rides. English &amp; Deutsch.</p>
     <a class="btn" id="joinBig" href="#">Join the Discord</a>
     <p class="note" style="margin-top:18px">Already in? Run <code style="color:var(--cy)">/myinvite</code> in Discord for your personal invite link — every friend who joins through it earns you reward roles.</p>
+    <div id="shareRow">
+      <a id="shareX" href="#" target="_blank" rel="noopener">Share on X</a>
+      <a id="shareReddit" href="#" target="_blank" rel="noopener">Share on Reddit</a>
+      <a id="shareWhatsapp" href="#" target="_blank" rel="noopener">Share on WhatsApp</a>
+      <button id="copyLink" type="button">Copy link</button>
+    </div>
+    <div id="qrWrap">
+      <img id="qrImg" width="140" height="140" alt="QR code to this page">
+      <span>Scan to open on your phone</span>
+    </div>
   </div>
 </div></section>
 
@@ -133,6 +149,17 @@
   var d = window.SITE_DATA || {};
   var $ = function (id) { return document.getElementById(id); };
   ["navJoin", "heroJoin", "joinBig"].forEach(function (id) { $(id).href = d.discord || "#"; });
+  var pageUrl = "https://bolyzockt.github.io/scoot-city/";
+  var shareText = "SCOOT CITY — a realistic open-world e-scooter game coming to Roblox. Join before release:";
+  $("shareX").href = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(shareText) + "&url=" + encodeURIComponent(pageUrl);
+  $("shareReddit").href = "https://www.reddit.com/submit?url=" + encodeURIComponent(pageUrl) + "&title=" + encodeURIComponent("SCOOT CITY — open-world e-scooter game on Roblox (in development)");
+  $("shareWhatsapp").href = "https://wa.me/?text=" + encodeURIComponent(shareText + " " + pageUrl);
+  $("qrImg").src = "https://api.qrserver.com/v1/create-qr-code/?size=140x140&margin=0&data=" + encodeURIComponent(pageUrl);
+  $("copyLink").onclick = function () {
+    navigator.clipboard.writeText(pageUrl).then(function () {
+      var b = $("copyLink"); var old = b.textContent; b.textContent = "Copied!"; setTimeout(function () { b.textContent = old; }, 1500);
+    });
+  };
   if (d.roblox) { $("heroPlay").textContent = "Play on Roblox"; $("heroPlay").href = d.roblox; }
   $("eta").textContent = "";
   $("etaBig").textContent = d.eta || "TBA";

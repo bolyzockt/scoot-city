@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bolyzockt.github.io/scoot-city/sitemap.xml
