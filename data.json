@@ -1,7 +1,7 @@
 {
-  "updated": "2026-09-27T19:49:01.702Z",
+  "updated": "2026-10-04T00:21:57.068Z",
   "source": "CLAUDE.md",
-  "total": 69,
+  "total": 70,
   "eta": "Early 2027 (estimate)",
   "areas": [
     {
@@ -10,7 +10,7 @@
     },
     {
       "name": "Camera & rider pose",
-      "percent": 85
+      "percent": 96
     },
     {
       "name": "Open world (terrain, roads, buildings)",
@@ -58,14 +58,14 @@
     },
     {
       "name": "Wheelies (balance mechanic)",
-      "percent": 90
+      "percent": 92
     }
   ],
   "next": [
     "Real 2-player testing (incl. wheelie pose for other players)",
     "Scooter tuning & balancing",
     "More time trials & missions",
-    "HUD hint before a wheelie tip-over",
+    "Wheelie leg animation feedback & tuning",
     "Polish & final testing before release"
   ],
   "scooters": [
