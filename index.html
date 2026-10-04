@@ -4,19 +4,19 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>SCOOT CITY</title>
-<meta name="description" content="SCOOT CITY: a realistic multiplayer open-world e-scooter game on Roblox. Development progress, scooters and community.">
+<meta name="description" content="SCOOT CITY: a realistic multiplayer open-world e-scooter game on Roblox (early prototype, still in development). Development progress, scooters and community.">
 <link rel="icon" href="logo.png">
 <meta name="theme-color" content="#00d4ff">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://bolyzockt.github.io/scoot-city/">
 <meta property="og:title" content="SCOOT CITY — Open World E-Scooter Game">
-<meta property="og:description" content="A realistic multiplayer open-world e-scooter game on Roblox. Free riding, real physics, a huge city to explore. No deliveries, no stunts.">
+<meta property="og:description" content="Early prototype: a realistic multiplayer open-world e-scooter game on Roblox. Everything is still being modeled and will keep improving.">
 <meta property="og:image" content="https://bolyzockt.github.io/scoot-city/banner.png">
 <meta property="og:image:width" content="1920">
 <meta property="og:image:height" content="1080">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="SCOOT CITY — Open World E-Scooter Game">
-<meta name="twitter:description" content="A realistic multiplayer open-world e-scooter game on Roblox. Free riding, real physics, a huge city to explore.">
+<meta name="twitter:description" content="Early prototype: a realistic multiplayer open-world e-scooter game on Roblox. Everything is still being modeled and will keep improving.">
 <meta name="twitter:image" content="https://bolyzockt.github.io/scoot-city/banner.png">
 <style>
   :root{
@@ -70,6 +70,8 @@
   .note{color:var(--mut);font-size:13px;margin-top:16px}
   footer{border-top:1px solid var(--line);padding:32px 0;color:var(--mut);font-size:14px}
   footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+  .proto{display:inline-block;margin:0 0 26px;padding:10px 16px;border:1px solid #c98a1b;background:rgba(201,138,27,.12);color:#ffcf7a;border-radius:10px;font-size:14px;max-width:640px}
+  .proto b{color:#ffb630;letter-spacing:.5px}
   #shareRow{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:16px}
   #shareRow a,#shareRow button{background:var(--panel2);border:1px solid var(--line);color:#cfd6e2;font:inherit;font-size:13px;padding:9px 14px;border-radius:9px;text-decoration:none;cursor:pointer}
   #shareRow a:hover,#shareRow button:hover{border-color:var(--cy);color:var(--text)}
@@ -89,6 +91,7 @@
 <header class="hero"><div class="wrap">
   <h1>SCOOT<br><span>CITY</span></h1>
   <p class="tag">A realistic open-world e-scooter game on Roblox. Free riding, real physics, a huge city to explore. No deliveries, no stunts.</p>
+  <div class="proto"><b>EARLY PROTOTYPE.</b> Everything you see is still being modeled and will keep getting better. Models, map and features will change before release.</div><br>
   <div class="cta">
     <a class="btn" id="heroJoin" href="#">Join the Discord</a>
     <a class="btn ghost" href="https://www.tiktok.com/@scootcity" target="_blank" rel="noopener">Follow on TikTok</a>
@@ -116,7 +119,7 @@
 
 <section id="scooters"><div class="wrap">
   <h2>Scooters</h2>
-  <p class="sub">Real values straight from the game.</p>
+  <p class="sub">Real values straight from the game. Prototype models and stats: they will change and get better.</p>
   <div class="grid" id="scGrid"></div>
 </div></section>
 
@@ -141,7 +144,7 @@
 </div></section>
 
 <footer><div class="wrap">
-  <span>&copy; SCOOT CITY. Not affiliated with Roblox Corporation. &middot; <a href="https://www.tiktok.com/@scootcity" target="_blank" rel="noopener" style="color:var(--mut)">TikTok @scootcity</a></span>
+  <span>&copy; SCOOT CITY. Early prototype, everything is work in progress. Not affiliated with Roblox Corporation. &middot; <a href="https://www.tiktok.com/@scootcity" target="_blank" rel="noopener" style="color:var(--mut)">TikTok @scootcity</a></span>
   <span id="upd"></span>
 </div></footer>
 
@@ -152,9 +155,9 @@
   var $ = function (id) { return document.getElementById(id); };
   ["navJoin", "heroJoin", "joinBig"].forEach(function (id) { $(id).href = d.discord || "#"; });
   var pageUrl = "https://bolyzockt.github.io/scoot-city/";
-  var shareText = "SCOOT CITY — a realistic open-world e-scooter game coming to Roblox. Join before release:";
+  var shareText = "SCOOT CITY — a realistic open-world e-scooter game coming to Roblox (early prototype, still being built). Join before release:";
   $("shareX").href = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(shareText) + "&url=" + encodeURIComponent(pageUrl);
-  $("shareReddit").href = "https://www.reddit.com/submit?url=" + encodeURIComponent(pageUrl) + "&title=" + encodeURIComponent("SCOOT CITY — open-world e-scooter game on Roblox (in development)");
+  $("shareReddit").href = "https://www.reddit.com/submit?url=" + encodeURIComponent(pageUrl) + "&title=" + encodeURIComponent("SCOOT CITY — open-world e-scooter game on Roblox (early prototype, in development)");
   $("shareWhatsapp").href = "https://wa.me/?text=" + encodeURIComponent(shareText + " " + pageUrl);
   $("qrImg").src = "https://api.qrserver.com/v1/create-qr-code/?size=140x140&margin=0&data=" + encodeURIComponent(pageUrl);
   $("copyLink").onclick = function () {
