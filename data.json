@@ -1,7 +1,7 @@
 {
-  "updated": "2026-10-04T00:21:57.068Z",
+  "updated": "2026-10-05T10:56:18.681Z",
   "source": "CLAUDE.md",
-  "total": 70,
+  "total": 75,
   "eta": "Early 2027 (estimate)",
   "areas": [
     {
@@ -22,7 +22,7 @@
     },
     {
       "name": "Customization & garage",
-      "percent": 55
+      "percent": 95
     },
     {
       "name": "Shop, coins & test rides",
@@ -50,7 +50,7 @@
     },
     {
       "name": "Admin tools & live events",
-      "percent": 60
+      "percent": 85
     },
     {
       "name": "Polish, languages (12 done), testing & release",
@@ -58,7 +58,7 @@
     },
     {
       "name": "Wheelies (balance mechanic)",
-      "percent": 92
+      "percent": 97
     }
   ],
   "next": [
